@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="230" viewBox="0 0 860 230" role="img" aria-labelledby="t d">
+<title id="t">whoami</title>
+<desc id="d">Terminal output. name: Hosein. role: web3 builder, security researcher, writer. focus: stablecoin payments, private finance (FHE), AI agents that pay onchain. now: shipping plinth, a non-custodial USDC gateway. audits: independent bug bounty on web3 and DeFi, disclosed responsibly.</desc>
+<style>
+@font-face{font-family:GeistMonoSub;font-weight:400;font-style:normal;src:url(data:font/woff2;base64,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) format("woff2")}
+
+text{font-family:GeistMonoSub, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;font-size:13px}
+.cur{opacity:0}
+.cover{transform:translateX(46.8px)}
+.blink{opacity:1}
+@media (prefers-reduced-motion:no-preference){
+.all{animation:all 14s linear infinite}
+@keyframes all{0%{opacity:1}91.43%{opacity:1}97.14%{opacity:0}100%{opacity:0}}
+.cover{animation:cover 14s linear infinite}
+@keyframes cover{0%{transform:translateX(0)}2.86%{transform:translateX(0);animation-timing-function:steps(6,end)}7.86%{transform:translateX(46.8px)}100%{transform:translateX(46.8px)}}
+.cur{animation:cur 14s linear infinite}
+@keyframes cur{0%{opacity:1;transform:translateX(0)}2.86%{opacity:1;transform:translateX(0);animation-timing-function:steps(6,end)}7.86%{opacity:1;transform:translateX(46.8px)}10%{opacity:0;transform:translateX(46.8px)}100%{opacity:0;transform:translateX(46.8px)}}
+.blink{animation:blink 1.06s steps(1,end) infinite}
+@keyframes blink{50%{opacity:0}}
+@keyframes wl0{0%{opacity:0;transform:translateX(-4px)}9.29%{opacity:0;transform:translateX(-4px)}12.14%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.wl0{animation:wl0 14s linear infinite}
+@keyframes wl1{0%{opacity:0;transform:translateX(-4px)}12.86%{opacity:0;transform:translateX(-4px)}15.71%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.wl1{animation:wl1 14s linear infinite}
+@keyframes wl2{0%{opacity:0;transform:translateX(-4px)}16.43%{opacity:0;transform:translateX(-4px)}19.29%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.wl2{animation:wl2 14s linear infinite}
+@keyframes wl3{0%{opacity:0;transform:translateX(-4px)}20%{opacity:0;transform:translateX(-4px)}22.86%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.wl3{animation:wl3 14s linear infinite}
+@keyframes wl4{0%{opacity:0;transform:translateX(-4px)}23.57%{opacity:0;transform:translateX(-4px)}26.43%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.wl4{animation:wl4 14s linear infinite}
+@keyframes wl5{0%{opacity:0;transform:translateX(-4px)}27.86%{opacity:0;transform:translateX(-4px)}30.71%{opacity:1;transform:none}100%{opacity:1;transform:none}}
+.wl5{animation:wl5 14s linear infinite}
+}
+</style>
+<rect x=".5" y=".5" width="859" height="229" rx="8" fill="#f6f8fa" stroke="#d1d9e0"/>
+<line x1="1" y1="36.5" x2="859" y2="36.5" stroke="#d1d9e0"/>
+<circle cx="22" cy="18.5" r="4.5" fill="#c4cbd2"/><circle cx="38" cy="18.5" r="4.5" fill="#c4cbd2"/><circle cx="54" cy="18.5" r="4.5" fill="#c4cbd2"/>
+<text x="430" y="22.5" text-anchor="middle" font-size="11" letter-spacing="0.6" fill="#8a939d">hosein-ul · zsh</text>
+<g class="all">
+<text x="28" y="66" fill="#8a939d">~ $ </text>
+<text x="59.2" y="66" fill="#0b0d10">whoami</text>
+<rect class="cover" x="59.2" y="51" width="54.8" height="22" fill="#f6f8fa"/>
+<rect class="cur" x="59.2" y="54" width="7.8" height="16" fill="#0b0d10" fill-opacity=".85"/>
+<g class="wl0"><text x="28" y="90" fill="#59636e">name</text><text x="98.2" y="90" fill="#0b0d10">Hosein</text></g>
+<g class="wl1"><text x="28" y="114" fill="#59636e">role</text><text x="98.2" y="114" fill="#0b0d10">web3 builder · systems architect · writer</text></g>
+<g class="wl2"><text x="28" y="138" fill="#59636e">focus</text><text x="98.2" y="138" fill="#0b0d10">stablecoin payments, private finance (FHE), agent transaction safety</text></g>
+<g class="wl3"><text x="28" y="162" fill="#59636e">now</text><text x="98.2" y="162" fill="#0b0d10">shipping Optima DEX (Robinhood L2) &amp; Plinth (Arc)</text></g>
+<g class="wl4"><text x="28" y="186" fill="#59636e">privacy</text><text x="98.2" y="186" fill="#0b0d10">confidential state on Zama FHEVM with ERC-7984</text></g>
+<g class="wl5"><text x="28" y="210" fill="#8a939d">~ $</text><rect class="blink" x="59.2" y="198" width="7.8" height="16" fill="#0b0d10" fill-opacity=".85"/></g>
+</g>
+</svg>

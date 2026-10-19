@@ -1,98 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 220" width="860" height="220" fill="none">
-  <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0e17"/>
-      <stop offset="50%" stop-color="#0e1524"/>
-      <stop offset="100%" stop-color="#0a0e17"/>
-    </linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="230" viewBox="0 0 860 230" role="img" aria-labelledby="t d">
+<title id="t">hosein</title>
+<desc id="d">Header: hosein, a web3 builder. The role line cycles between building payment rails for stablecoins, hunting bugs in DeFi protocols and explaining infra to humans. Block cards scroll past on a chain.</desc>
+<style>
+@font-face{font-family:GeistMonoSub;font-weight:400;font-style:normal;src:url(data:font/woff2;base64,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) format("woff2")}
+@font-face{font-family:GeistMonoSub;font-weight:500;font-style:normal;src:url(data:font/woff2;base64,d09GMgABAAAAAAQ4AA0AAAAAB2AAAAPmAAGzMwAAAAAAAAAAAAAAAAAAAAAAAAAAGyAcKgZgAFwRCAqFTIRsATYCJAMYCxYABCAFg1wHIBsHBgCeBU7ZLjqedEUV5asq/BUFzqDix/az9x4q0SREQraKRzx1SidlSjTJfGkc1JmzOW9qnNSNyKOiyvyBDKo3QB74v3f3DftjHu/ECUxfFG1NoLTjkUScafU/wDnn///e6X/2K5BAHkGWcXTb9537a1MbP4ZjWx8jDahNa/qjTtwGW+DlX/6OrayfbsFDfSQVgaiCEZC1XGuFbB7wFQAEolpK4TCd9bhXRdphEJIx2ccJ8lUG7IVzAtDXx+sI5CAALBCx2cvZjvYSLZyDCVZ693sM/ByZB4AANtoVqMgEBhzISyOQl64DSAozQRUFKpFRsf7iY0SF+Qr33DP33XO7gICEsqihZBT1CegJj0ALAAA8AHBEjGNArA1nJ8uxtEK8WymeVfBV85JJZGoqhZ+fSMAjHndPIXnOoPPirvkpZCrZeRqPxFxUsd1DBO9jxJ6plOPk3YPI1AfovLjVnuuaaL2mD+sOiRDXBo+LETUv0sq3aW40iSuvt4rNf1gH7znofjtM2ko8nmgpGY6j+brdsfE2PpxwIAc87jpkwxE+p8DmQJEYg0LVHMuCt1qsqIo6hCfYrSKl73Rxd4bC3F260NtA4XDIB9T7WZcLuztlEFmiWbxo6bqpKW7s3uRSYN4erz7icrMLBM6aXTVA3GDjw60N9CNzluRT/vOlWkWOuDUT3c6eEO0aG/IxCvQWqbLYQ3R5CsbXQOxt9sjjkbu2Ktsqy/c3EqhoVCGCyCeTqQPfcKwOi8l01JBFogkcZrJ8Ydy3GMQBA7iFlUcpD6nYZSr1MkZ9SLbxzSwBWyVVKJ5htsA+DpR9x8/YsdY5fK0o3CrSVzcF+qpbsldoaUpXG9qFW2IpZ8obOcwWpYHf2cVTV4u1BpXkOExiM0jEOju82crYyp4xYyzvAPimp6zdzPZhW51azp1/zrqs0bxzNrS4orbhAXSBgPNPRXJPEXpGREIUAEBAH8rAT9jrQE/uT3ZP9wRuzn0OffrXXu9+0f/HcIvSSwGCLFPjTwnbAaH+O+Hi5k238EHmPwQiJqJCGAzwhhkERMO/co1QYnKUCJlZVTkC7AGES80ubpIO3GlLtnocDxiFbqcIqoRqkOjQaayQJg0aReQiIyKjymXVqE4uhTpNwgON+DIdmtWpETkiURGNOoSE5SrVKCKiUxgbAUGDJtT6UdUwNTq0IYipE1KjTqv4uowapV6HdhFYtrHsHUiHoA7rt+vUahLVxqxOg6hWVUJIMAxERBx2ZhJanEq+03YUs4sQhpoQxtxBud+VrFf1xaJDgAFHEaYYWjCfjPptJHSj1KlGR1XWOZbmduw7ZIAAAAAA) format("woff2")}
+@font-face{font-family:GeistSub;font-weight:700;font-style:normal;src:url(data:font/woff2;base64,d09GMgABAAAAAAQkAA4AAAAAB4gAAAPPAAHMzQAAAAAAAAAAAAAAAAAAAAAAAAAAGhwbgSgccgZgAFQRCAqEFINLATYCJAMsCxgABCAFgzIHIBs0Big+BfBANvDqiQm1hK1ianY28R4S2y8n8o1UfDEpyX9PgyfYj/nuvigqllxDpkGkijfYlre0UOZNRBKhzPRozB0imn5qjk0UMenmoWglExKJTIUOD9R+7e3+c7SpRdHsiSYmJRyV0oiECNMvYRoa08lcck4ZNEUFVpn+B+hPX02CZQbfKkuW1HLmar5xKjE1/c+5dJGYQHuffKDjiWRcJmg93/BMD+ishcZnUTQ/kImebjWuKD9Bgqwh47hE+vTFCAgBgFLCICwuIcBXTal22mj3w/D+8kwJho9n0kUYvhidq8CwWsD//wUg5+mZCjQCAcKkXMKlitWCZmY1TPz/dhqAfGKr/8vE64GDGiNlJSMQkIQboU+UtpWHRFVH7Q3pwSMAayJqQICd8vojN6uJ8gsaP+u1ZT6ivpgcLwmCibDrjetiPKv+IA290gAYhG1kC7hBC64UNzozp7PDg3azye//D+Z4VT0QgNbrJ2RrBgoMEK+GgHi1ugEhlzJlS8ubNFsWxudUyhoWq18AhEwUVwMgAJAI8MAx3IZkQDwAQC0qsBSh0Dqn1+yNDinm6MmLF7L58mWw/fw5wuvHwfbs4tcLwdMTf+tRYFW4LCwQC8nlLd4gWpDae4vvKfICeZZft158fzaz/VLuRvHjmM/M3l4dOu+f3I3Jwi3ZnOdM3V3TkCv125mn4ObsoVVpUVvhXTJo1wJ+zTp8hdc9b1BvL7Qus35HRvrUZ66jB/NvfuRSf9U9k6WGwF6ITkciZw3tizRmZ0cN2vqzerT1h7GgjyGYTZYTkbOibqyBxaoZUJOAX+Fd1uvWAwHd2rLB6115c2dAu76i98yIFTNOZ0jE8D+BWLGzcVjnPDf/t7Dr63NpMjJJrjAdi8lFd5bFn+SdpnnQV3zQlLFzvNA6TnnuH9n0AX516XpddS+1wOY3kr29ALoAb+ITuF4Acv/wdeG57Rr511xN8guc3ZgHgLO/WmUk+U6TTxWbAhD8wbq3ozBvN2fzfjyIK0COCSDEcdCGIVTBApM2YiGtVgrBD0CBKhBY0ymgjsAjc7voWFBDUnlwAQgI3wVQrotgKPUCpnjfYJnxdwu2+KAHnUlTls3Iy8qZg3CxcfEhfjlpiEla3qw5iNuMSQVp4+NVNObNyZk0YxZCljNnzpRZUiwsWXlzcuaNYRo3qYxlQdqMcWklLNmasgwZkyrmUMqr1ZpUMoGDSYyNTSbIS8dOJqcMyyY0QoPoTJSv2UQrI9R9lDH6qWDSonwXcyQLuh5Q/q85hBjSxgjxUTq0arjW/3MNAQAAAA==) format("woff2")}
 
-    <!-- Emerald Glow -->
-    <radialGradient id="emeraldGlow" cx="90%" cy="15%" r="65%">
-      <stop offset="0%" stop-color="#00F59B" stop-opacity="0.18"/>
-      <stop offset="50%" stop-color="#00F59B" stop-opacity="0.04"/>
-      <stop offset="100%" stop-color="#00F59B" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Subtle Cyan Accent Glow -->
-    <radialGradient id="cyanGlow" cx="10%" cy="90%" r="50%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Grid Pattern -->
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.6"/>
-      <circle cx="24" cy="24" r="0.75" fill="#334155" fill-opacity="0.8"/>
-    </pattern>
-
-    <style>
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-      
-      @keyframes pulse {
-        0% { transform: scale(0.95); opacity: 0.8; }
-        50% { transform: scale(1.4); opacity: 0.2; }
-        100% { transform: scale(0.95); opacity: 0.8; }
-      }
-      .ping {
-        animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        transform-origin: 40px 178px;
-      }
-    </style>
-  </defs>
-
-  <!-- Container Box -->
-  <rect x="1" y="1" width="858" height="218" rx="14" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5"/>
-  <rect x="1" y="1" width="858" height="218" rx="14" fill="url(#grid)"/>
-  <rect x="1" y="1" width="858" height="218" rx="14" fill="url(#emeraldGlow)"/>
-  <rect x="1" y="1" width="858" height="218" rx="14" fill="url(#cyanGlow)"/>
-
-  <!-- Top Metadata Tag -->
-  <g transform="translate(36, 40)">
-    <rect x="0" y="-14" width="280" height="22" rx="4" fill="#161F30" stroke="#24334C" stroke-width="1"/>
-    <circle cx="10" cy="-3" r="3" fill="#00F59B"/>
-    <text x="20" y="1" class="mono" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="1.2">0xHOSEIN · ON-CHAIN SINCE 2021</text>
-  </g>
-
-  <!-- Name / Title -->
-  <text x="36" y="98" class="sans" font-size="38" font-weight="800" fill="#FFFFFF" letter-spacing="-0.8">Hosein <tspan font-size="22" font-weight="500" fill="#64748B">(@hosein-ul)</tspan></text>
-
-  <!-- Subtitle -->
-  <text x="36" y="128" class="sans" font-size="15" font-weight="400" fill="#94A3B8">Web3 Systems Architect <tspan fill="#00F59B">•</tspan> Stablecoin Settlement Rails <tspan fill="#00F59B">•</tspan> Confidential Computing</text>
-
-  <!-- Status Bar & Highlights -->
-  <g transform="translate(36, 178)">
-    <!-- Radar dot -->
-    <circle class="ping" cx="4" cy="-4" r="5" fill="#00F59B" fill-opacity="0.4"/>
-    <circle cx="4" cy="-4" r="3.5" fill="#00F59B"/>
-    <text x="18" y="0" class="mono" font-size="12" font-weight="600" fill="#E2E8F0" letter-spacing="0.5">ACTIVE · <tspan fill="#94A3B8">SHIPPING</tspan> <tspan fill="#00F59B">OPTIMA DEX</tspan> <tspan fill="#64748B">&amp;</tspan> <tspan fill="#38BDF8">PLINTH GATEWAY</tspan></text>
-  </g>
-
-  <!-- Right Side Interactive Badges / Pillars -->
-  <g transform="translate(560, 48)">
-    <!-- Pill 1: FHEVM -->
-    <g transform="translate(0, 0)">
-      <rect width="260" height="36" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <circle cx="18" cy="18" r="4" fill="#00F59B"/>
-      <text x="32" y="22" class="sans" font-size="12" font-weight="600" fill="#E5E7EB">Zama FHEVM &amp; ERC-7984</text>
-      <text x="210" y="22" class="mono" font-size="10" fill="#6B7280">Privacy</text>
-    </g>
-
-    <!-- Pill 2: Nitro L2 -->
-    <g transform="translate(0, 44)">
-      <rect width="260" height="36" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <circle cx="18" cy="18" r="4" fill="#38BDF8"/>
-      <text x="32" y="22" class="sans" font-size="12" font-weight="600" fill="#E5E7EB">Robinhood Chain (Nitro L2)</text>
-      <text x="218" y="22" class="mono" font-size="10" fill="#6B7280">DEX</text>
-    </g>
-
-    <!-- Pill 3: Circle Arc -->
-    <g transform="translate(0, 88)">
-      <rect width="260" height="36" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <circle cx="18" cy="18" r="4" fill="#A78BFA"/>
-      <text x="32" y="22" class="sans" font-size="12" font-weight="600" fill="#E5E7EB">Circle Arc &amp; Agent x402</text>
-      <text x="210" y="22" class="mono" font-size="10" fill="#6B7280">Rails</text>
-    </g>
-  </g>
+text{font-family:GeistMonoSub, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+.name{font-family:GeistSub, ui-sans-serif, system-ui, sans-serif}
+.r1,.r2{opacity:0}
+@media (prefers-reduced-motion:no-preference){
+.chain{animation:slide 12s linear infinite}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-600px)}}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(3.4);opacity:0}}
+.blink{animation:blink 1.06s steps(1,end) infinite}
+@keyframes blink{50%{opacity:0}}
+.r0{animation:ro0 9s linear infinite}.r1{animation:ro1 9s linear infinite}.r2{animation:ro2 9s linear infinite}
+.r0 .role-co{animation:co0 9s linear infinite}.r0 .role-ca{animation:ca0 9s linear infinite}
+.r1 .role-co{animation:co1 9s linear infinite}.r1 .role-ca{animation:ca1 9s linear infinite}
+.r2 .role-co{animation:co2 9s linear infinite}.r2 .role-ca{animation:ca2 9s linear infinite}
+@keyframes ro0{0%{opacity:1}31.53%{opacity:1}33.33%{opacity:0}100%{opacity:0}}
+@keyframes co0{0%{transform:translateX(0)}0.9%{transform:translateX(0);animation-timing-function:steps(40,end)}10.9%{transform:translateX(336px)}100%{transform:translateX(336px)}}
+@keyframes ca0{0%{transform:translateX(0)}0.9%{transform:translateX(0);animation-timing-function:steps(40,end)}10.9%{transform:translateX(336px)}100%{transform:translateX(336px)}}
+@keyframes ro1{0%{opacity:0}33.33%{opacity:0}34.23%{opacity:1}64.87%{opacity:1}66.67%{opacity:0}100%{opacity:0}}
+@keyframes co1{0%{transform:translateX(0)}34.23%{transform:translateX(0);animation-timing-function:steps(38,end)}44.23%{transform:translateX(319.2px)}100%{transform:translateX(319.2px)}}
+@keyframes ca1{0%{transform:translateX(0)}34.23%{transform:translateX(0);animation-timing-function:steps(38,end)}44.23%{transform:translateX(319.2px)}100%{transform:translateX(319.2px)}}
+@keyframes ro2{0%{opacity:0}66.67%{opacity:0}67.57%{opacity:1}98.2%{opacity:1}100%{opacity:0}}
+@keyframes co2{0%{transform:translateX(0)}67.57%{transform:translateX(0);animation-timing-function:steps(28,end)}77.57%{transform:translateX(235.2px)}100%{transform:translateX(235.2px)}}
+@keyframes ca2{0%{transform:translateX(0)}67.57%{transform:translateX(0);animation-timing-function:steps(28,end)}77.57%{transform:translateX(235.2px)}100%{transform:translateX(235.2px)}}
+}
+</style>
+<defs>
+<clipPath id="cc"><rect x="400" y="1" width="458.5" height="228"/></clipPath>
+<linearGradient id="fl" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#11161d" stop-opacity="1"/><stop offset="1" stop-color="#11161d" stop-opacity="0"/></linearGradient>
+<linearGradient id="fr" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#11161d" stop-opacity="0"/><stop offset="1" stop-color="#11161d" stop-opacity="1"/></linearGradient>
+</defs>
+<rect x=".5" y=".5" width="859" height="229" rx="8" fill="#11161d" stroke="#262c34"/>
+<text x="32" y="50" font-size="11" letter-spacing="1.6" fill="#656d76">0x HOSEIN-UL · ONCHAIN SINCE 2021</text>
+<text class="name" x="30" y="108" font-size="46" font-weight="700" letter-spacing="-1.8" fill="#eef1f4">hosein</text>
+<g class="r0">
+<text x="32" y="148" font-size="14" fill="#9198a1"><tspan fill="#656d76">&gt; </tspan>building payment rails for stablecoins</text>
+<rect class="role-co" style="transform:translateX(336px)" x="32" y="132" width="342" height="24" fill="#11161d"/>
+<g class="role-ca" style="transform:translateX(336px)"><rect class="blink" x="33" y="133" width="1.6" height="18" fill="#eef1f4"/></g>
+</g>
+<g class="r1">
+<text x="32" y="148" font-size="14" fill="#9198a1"><tspan fill="#656d76">&gt; </tspan>architecting private onchain finance</text>
+<rect class="role-co" style="transform:translateX(319.2px)" x="32" y="132" width="325.2" height="24" fill="#11161d"/>
+<g class="role-ca" style="transform:translateX(319.2px)"><rect class="blink" x="33" y="133" width="1.6" height="18" fill="#eef1f4"/></g>
+</g>
+<g class="r2">
+<text x="32" y="148" font-size="14" fill="#9198a1"><tspan fill="#656d76">&gt; </tspan>explaining infra to humans</text>
+<rect class="role-co" style="transform:translateX(235.2px)" x="32" y="132" width="241.2" height="24" fill="#11161d"/>
+<g class="role-ca" style="transform:translateX(235.2px)"><rect class="blink" x="33" y="133" width="1.6" height="18" fill="#eef1f4"/></g>
+</g>
+<circle class="pulse" cx="36" cy="192" r="4" fill="#3fb950"/>
+<circle cx="36" cy="192" r="4" fill="#3fb950"/>
+<text x="50" y="196" font-size="11" letter-spacing="1.4" fill="#656d76">FINALIZED · SHIPPING WEEKLY</text>
+<g clip-path="url(#cc)"><g class="chain">
+<path d="M414 95C424 95 420 95 430 95" fill="none" stroke="#4d5661" stroke-width="1.2"/>
+<path d="M534 95C544 95 540 135 550 135" fill="none" stroke="#4d5661" stroke-width="1.2"/>
+<path d="M654 135C664 135 660 95 670 95" fill="none" stroke="#4d5661" stroke-width="1.2"/>
+<path d="M774 95C784 95 780 135 790 135" fill="none" stroke="#4d5661" stroke-width="1.2"/>
+<path d="M894 135C904 135 900 95 910 95" fill="none" stroke="#4d5661" stroke-width="1.2"/>
+<path d="M1014 95C1024 95 1020 95 1030 95" fill="none" stroke="#4d5661" stroke-width="1.2"/>
+<path d="M1134 95C1144 95 1140 135 1150 135" fill="none" stroke="#4d5661" stroke-width="1.2"/>
+<path d="M1254 135C1264 135 1260 95 1270 95" fill="none" stroke="#4d5661" stroke-width="1.2"/>
+<path d="M1374 95C1384 95 1380 135 1390 135" fill="none" stroke="#4d5661" stroke-width="1.2"/>
+<path d="M1494 135C1504 135 1500 95 1510 95" fill="none" stroke="#4d5661" stroke-width="1.2"/>
+<g><rect x="430" y="56" width="104" height="78" rx="6" fill="#0d1117" stroke="#262c34"/>
+<text x="442" y="79" font-size="11" font-weight="500" fill="#eef1f4">#21,904,118</text>
+<text x="442" y="95" font-size="10" fill="#9198a1">0x9f3a…c1e7</text>
+<text x="442" y="109" font-size="10" fill="#9198a1">142 txs</text>
+<rect x="442" y="118" width="80" height="4" rx="2" fill="#2a313a"/>
+<rect x="442" y="118" width="49.6" height="4" rx="2" fill="#eef1f4"/></g>
+<g><rect x="550" y="96" width="104" height="78" rx="6" fill="#0d1117" stroke="#262c34"/>
+<text x="562" y="119" font-size="11" font-weight="500" fill="#eef1f4">#21,904,119</text>
+<text x="562" y="135" font-size="10" fill="#9198a1">0x4be0…7a52</text>
+<text x="562" y="149" font-size="10" fill="#9198a1">97 txs</text>
+<rect x="562" y="158" width="80" height="4" rx="2" fill="#2a313a"/>
+<rect x="562" y="158" width="32.8" height="4" rx="2" fill="#eef1f4"/></g>
+<g><rect x="670" y="56" width="104" height="78" rx="6" fill="#0d1117" stroke="#262c34"/>
+<text x="682" y="79" font-size="11" font-weight="500" fill="#eef1f4">#21,904,120</text>
+<text x="682" y="95" font-size="10" fill="#9198a1">0xd17c…09fb</text>
+<text x="682" y="109" font-size="10" fill="#9198a1">218 txs</text>
+<rect x="682" y="118" width="80" height="4" rx="2" fill="#2a313a"/>
+<rect x="682" y="118" width="70.4" height="4" rx="2" fill="#eef1f4"/></g>
+<g><rect x="790" y="96" width="104" height="78" rx="6" fill="#0d1117" stroke="#262c34"/>
+<text x="802" y="119" font-size="11" font-weight="500" fill="#eef1f4">#21,904,121</text>
+<text x="802" y="135" font-size="10" fill="#9198a1">0x62aa…e3d4</text>
+<text x="802" y="149" font-size="10" fill="#9198a1">64 txs</text>
+<rect x="802" y="158" width="80" height="4" rx="2" fill="#2a313a"/>
+<rect x="802" y="158" width="26.4" height="4" rx="2" fill="#eef1f4"/></g>
+<g><rect x="910" y="56" width="104" height="78" rx="6" fill="#0d1117" stroke="#262c34"/>
+<text x="922" y="79" font-size="11" font-weight="500" fill="#eef1f4">#21,904,122</text>
+<text x="922" y="95" font-size="10" fill="#9198a1">0xa8f1…5b06</text>
+<text x="922" y="109" font-size="10" fill="#9198a1">131 txs</text>
+<rect x="922" y="118" width="80" height="4" rx="2" fill="#2a313a"/>
+<rect x="922" y="118" width="45.6" height="4" rx="2" fill="#eef1f4"/></g>
+<g><rect x="1030" y="56" width="104" height="78" rx="6" fill="#0d1117" stroke="#262c34"/>
+<text x="1042" y="79" font-size="11" font-weight="500" fill="#eef1f4">#21,904,118</text>
+<text x="1042" y="95" font-size="10" fill="#9198a1">0x9f3a…c1e7</text>
+<text x="1042" y="109" font-size="10" fill="#9198a1">142 txs</text>
+<rect x="1042" y="118" width="80" height="4" rx="2" fill="#2a313a"/>
+<rect x="1042" y="118" width="49.6" height="4" rx="2" fill="#eef1f4"/></g>
+<g><rect x="1150" y="96" width="104" height="78" rx="6" fill="#0d1117" stroke="#262c34"/>
+<text x="1162" y="119" font-size="11" font-weight="500" fill="#eef1f4">#21,904,119</text>
+<text x="1162" y="135" font-size="10" fill="#9198a1">0x4be0…7a52</text>
+<text x="1162" y="149" font-size="10" fill="#9198a1">97 txs</text>
+<rect x="1162" y="158" width="80" height="4" rx="2" fill="#2a313a"/>
+<rect x="1162" y="158" width="32.8" height="4" rx="2" fill="#eef1f4"/></g>
+<g><rect x="1270" y="56" width="104" height="78" rx="6" fill="#0d1117" stroke="#262c34"/>
+<text x="1282" y="79" font-size="11" font-weight="500" fill="#eef1f4">#21,904,120</text>
+<text x="1282" y="95" font-size="10" fill="#9198a1">0xd17c…09fb</text>
+<text x="1282" y="109" font-size="10" fill="#9198a1">218 txs</text>
+<rect x="1282" y="118" width="80" height="4" rx="2" fill="#2a313a"/>
+<rect x="1282" y="118" width="70.4" height="4" rx="2" fill="#eef1f4"/></g>
+<g><rect x="1390" y="96" width="104" height="78" rx="6" fill="#0d1117" stroke="#262c34"/>
+<text x="1402" y="119" font-size="11" font-weight="500" fill="#eef1f4">#21,904,121</text>
+<text x="1402" y="135" font-size="10" fill="#9198a1">0x62aa…e3d4</text>
+<text x="1402" y="149" font-size="10" fill="#9198a1">64 txs</text>
+<rect x="1402" y="158" width="80" height="4" rx="2" fill="#2a313a"/>
+<rect x="1402" y="158" width="26.4" height="4" rx="2" fill="#eef1f4"/></g>
+<g><rect x="1510" y="56" width="104" height="78" rx="6" fill="#0d1117" stroke="#262c34"/>
+<text x="1522" y="79" font-size="11" font-weight="500" fill="#eef1f4">#21,904,122</text>
+<text x="1522" y="95" font-size="10" fill="#9198a1">0xa8f1…5b06</text>
+<text x="1522" y="109" font-size="10" fill="#9198a1">131 txs</text>
+<rect x="1522" y="118" width="80" height="4" rx="2" fill="#2a313a"/>
+<rect x="1522" y="118" width="45.6" height="4" rx="2" fill="#eef1f4"/></g>
+</g></g>
+<rect x="400" y="1" width="64" height="228" fill="url(#fl)"/>
+<rect x="796" y="1" width="62.5" height="228" fill="url(#fr)"/>
+<rect x=".5" y=".5" width="859" height="229" rx="8" fill="none" stroke="#262c34"/>
 </svg>
