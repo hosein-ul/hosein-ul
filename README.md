@@ -1,16 +1,29 @@
-<div align="center">
-
-<img src="assets/banner.svg" alt="Hosein (@hosein-ul) - Web3 Systems Architect & Smart Contract Engineer" width="100%" />
-
-</div>
-
-<br/>
+```text
+┌─── [ 0xHOSEIN // ON-CHAIN SYSTEMS ARCHITECT ] ──────────────────────────────────────────────┐
+│                                                                                              │
+│   _   _               _                                                                      │
+│  | | | | ___  ___  ___(_)_ __                                                                │
+│  | |_| |/ _ \/ __|/ _ \ | '_ \       Active : 2021 — Present                                 │
+│  |  _  | (_) \__ \  __/ | | | |      Status : Finalized & Shipping Weekly                    │
+│  |_| |_|\___/|___/\___|_|_| |_|      Focus  : FHEVM · Arbitrum Nitro · Circle Arc            │
+│                                                                                              │
+│  $ sysctl -a core.mission                                                                    │
+│  > Non-Custodial Rails · Confidential EVM State (FHE) · High-Throughput L2 Infrastructure    │
+│                                                                                              │
+│  $ git status --current-deployments                                                          │
+│  > Optima DEX    [Robinhood Chain Mainnet / Nitro L2]    → ACTIVE                            │
+│  > Plinth        [Non-Custodial Stablecoin Gateway / Arc] → LIVE                              │
+│  > ShadowLine    [Confidential Asset Shielding / ERC-7984] → ACTIVE                         │
+│  > Pharos Guard  [Agent Pre-Execution Risk Simulation]   → LIVE                              │
+│                                                                                              │
+└──────────────────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ## ⚡ About Me & Engineering Philosophy
 
-I am a **Web3 systems architect and smart contract developer**, active on-chain since 2021. My work is focused on the architecture of **non-custodial financial rails**, **confidential state execution** via Fully Homomorphic Encryption (FHEVM), and **high-throughput L2 exchange infrastructure**.
+I am a **Web3 systems architect and smart contract engineer**, active on-chain since 2021. My work is focused on the architecture of **non-custodial financial rails**, **confidential state execution** via Fully Homomorphic Encryption (FHEVM), and **high-throughput L2 exchange infrastructure**.
 
-Rather than relying on centralized intermediaries or custodial escrows, I design decentralized protocols where liquidity moves directly from payer to merchant, where smart contracts compute over fully encrypted balances without revealing private financial data to the mempool, and where autonomous AI agents can safely simulate transactions before committing capital on-chain.
+I believe the fundamental premise of decentralized networks is sovereign, uncompromised execution—financial primitives that operate without custodial gatekeepers, pooled counterparty risk, or arbitrary state manipulation. My engineering focus centers on building infrastructure where funds move directly peer-to-peer and settle straight to recipient wallets, where smart contracts compute over encrypted states without leaking sensitive financial intelligence, and where high-performance L2 execution layers power seamless decentralized trading.
 
 ---
 
@@ -20,7 +33,7 @@ Rather than relying on centralized intermediaries or custodial escrows, I design
 - **Architecture**: Peer-to-merchant payment rails where every transaction is assigned a deterministic, single-use address and settles straight to the recipient's wallet.
 - **Key Advantage**: Zero custodial middleman, zero escrow custody risk, and seamless multi-token settlement (native USDC and EURC) deployed on low-latency networks like Circle Arc.
 
-### 2. 🛡️ Confidential On-Chain Finance (FHEVM)
+### 2. 🛡️ Confidential On-Chain Finance (FHEVM & ERC-7984)
 - **Architecture**: Application-level cryptographic privacy on Ethereum using Zama's Fully Homomorphic Encryption Virtual Machine and the ERC-7984 confidential token standard.
 - **Key Advantage**: Enables contracts to perform arithmetic, state transitions, and balance transfers directly on encrypted ciphertexts (`euint64`), preserving total user privacy without sacrificing EVM composability or validator consensus.
 
@@ -47,76 +60,29 @@ Rather than relying on centralized intermediaries or custodial escrows, I design
 
 ---
 
-## 🛠️ Technical Arsenal
+## 🛠️ Languages & Toolchain
 
-<div align="center">
-
-<p align="left"><b>Smart Contracts & Web3 Protocols</b></p>
-<p align="left">
-  <img src="https://img.shields.io/badge/Solidity-0d1117?style=flat-square&logo=solidity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Foundry-0d1117?style=flat-square&logo=ethereum&logoColor=ffdb1c" />
-  <img src="https://img.shields.io/badge/Zama_FHEVM-0d1117?style=flat-square&logo=shield&logoColor=00f59b" />
-  <img src="https://img.shields.io/badge/Hardhat-0d1117?style=flat-square&logo=hardhat&logoColor=yellow" />
-  <img src="https://img.shields.io/badge/Arbitrum_Nitro-0d1117?style=flat-square&logo=arbitrum&logoColor=28a0f0" />
-  <img src="https://img.shields.io/badge/Circle_Arc_%26_CCTP-0d1117?style=flat-square&logo=circle&logoColor=00f59b" />
-  <img src="https://img.shields.io/badge/Uniswap_V3-0d1117?style=flat-square&logo=uniswap&logoColor=ff007a" />
-  <img src="https://img.shields.io/badge/Viem_%26_Wagmi-0d1117?style=flat-square&logo=v&logoColor=2f80ed" />
-</p>
-
-<p align="left"><b>Full-Stack, Systems & AI</b></p>
-<p align="left">
-  <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178c6" />
-  <img src="https://img.shields.io/badge/Next.js_16-0d1117?style=flat-square&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/React_19-0d1117?style=flat-square&logo=react&logoColor=61dafb" />
-  <img src="https://img.shields.io/badge/Tailwind_v4-0d1117?style=flat-square&logo=tailwindcss&logoColor=38bdf8" />
-  <img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776ab" />
-  <img src="https://img.shields.io/badge/Fastify_%26_Prisma-0d1117?style=flat-square&logo=prisma&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ed" />
-  <img src="https://img.shields.io/badge/x402_%26_MCP-0d1117?style=flat-square&logo=anthropic&logoColor=00f59b" />
-</p>
-
-<br/>
-
-<img src="https://skillicons.dev/icons?i=solidity,ts,python,nextjs,react,tailwind,nodejs,postgres,git,docker,linux" alt="Skill Icons" />
-
-</div>
+| Domain | Stack |
+|:---|:---|
+| **Smart Contracts** | Solidity, Foundry, Hardhat, Zama FHEVM, OpenZeppelin, ERC-7984 |
+| **L2 & Protocols** | Arbitrum Nitro, Circle Arc, Uniswap V3, CCTP, Ethereum EVM |
+| **Web3 Client** | Viem, Wagmi, Reown AppKit, x402 protocol, MCP |
+| **Full-Stack & Systems** | TypeScript, Next.js 16, React 19, Tailwind CSS v4, Python, Fastify, Prisma, Docker |
 
 ---
 
 ## ✍️ Technical Writing & Infrastructure Analysis
 
-In addition to building software, I write deep-dives on infrastructure design:
+In addition to building software, I write deep-dives on blockchain infrastructure design:
 - How modern rollups, state transition proofs, and payment rails operate under the hood.
 - Dissecting complex protocol specifications and cryptographic invariants into intuitive mental models.
 - Architectural threads and analyses published on [X (@andy1eth)](https://x.com/andy1eth).
 
 ---
 
-## 📊 Live Metrics & Contributions
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=hosein-ul&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f59b&icon_color=00f59b&text_color=c9d1d9" alt="GitHub Stats" width="48%" />
-<img src="https://streak-stats.demolab.com?user=hosein-ul&theme=tokyonight&hide_border=true&background=0D1117&ring=00F59B&fire=00F59B&currStreakLabel=00F59B" alt="Streak Stats" width="48%" />
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hosein-ul&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f59b&text_color=c9d1d9" alt="Top Languages" width="58%" />
-
-</div>
-
----
-
 ## 📬 Connect & Inquiries
 
-<div align="center">
-
-[![X (Twitter)](https://img.shields.io/badge/X_Twitter-@andy1eth-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/andy1eth)
-&nbsp;
-[![Telegram](https://img.shields.io/badge/Telegram-@hoseinf3-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/hoseinf3)
-&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-hosein--ul-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hosein-ul)
-&nbsp;
-[![Email](https://img.shields.io/badge/Email-samroise22@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:samroise22@gmail.com)
-
-</div>
+- **X (Twitter)**: [@andy1eth](https://x.com/andy1eth)
+- **Telegram**: [@hoseinf3](https://t.me/hoseinf3)
+- **GitHub**: [@hosein-ul](https://github.com/hosein-ul)
+- **Email**: [samroise22@gmail.com](mailto:samroise22@gmail.com)
