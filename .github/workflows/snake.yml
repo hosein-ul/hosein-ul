@@ -1,0 +1,37 @@
+name: snake
+
+on:
+  schedule:
+    - cron: "41 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: false
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Platane/snk builds the snake from the contribution graph; the palette matches the README tokens.
+      - name: Generate snake
+        uses: Platane/snk/svg-only@v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?palette=github-light&color_snake=#0b0d10&color_dots=#ebeef1,#c4cbd2,#8c96a0,#4b545d,#0b0d10
+            dist/snake-dark.svg?palette=github-dark&color_snake=#eef1f4&color_dots=#151a21,#2a313a,#4d5661,#8f98a3,#eef1f4
+
+      # Publishes dist/ to the "output" branch:
+      # https://raw.githubusercontent.com/hosein-ul/hosein-ul/output/snake-light.svg
+      - name: Push to the output branch
+        uses: crazy-max/ghaction-github-pages@v5.0.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
