@@ -1,0 +1,36 @@
+{
+  "owner": "hosein-ul",
+  "repos": [
+    {
+      "name": "plinth",
+      "blurb": "Non-custodial stablecoin payment gateway. Every payment gets its own address and the chain proves it.",
+      "languages": [
+        "Solidity",
+        "TypeScript",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "ShadowLine",
+      "blurb": "Shield ERC-20 tokens into confidential ERC-7984 cTokens and send private transfers with encrypted amounts on Zama's FHEVM.",
+      "languages": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Truth-Market",
+      "blurb": "Confidential prediction markets on Zama FHEVM. Encrypted bets, K-anonymous odds, non-custodial settlement.",
+      "languages": [
+        "TypeScript",
+        "Solidity"
+      ]
+    },
+    {
+      "name": "pharos-tx-guardrail",
+      "blurb": "Pre-execution safety check for AI agents: simulates a transaction and returns a 0-100 risk score.",
+      "languages": [
+        "Markdown"
+      ]
+    }
+  ]
+}
