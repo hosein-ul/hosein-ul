@@ -1,82 +1,51 @@
-// Shared palette + helpers for every generated SVG. Monochrome + one accent.
-// No external fonts: system stacks only.
-
+// Design tokens for every generated SVG. Pure monochrome; the only colour is the "finalized" green.
 export const THEMES = {
   light: {
-    ink: "#0d0d0f",
-    muted: "#6b6b73",
-    faint: "#d4d4da",
-    line: "#e4e4e9",
-    surface: "#ffffff",
-    accent: "#3b5bdb",
+    name: "light",
+    bg: "#ffffff",
+    sunk: "#f6f8fa",
+    fg: "#0b0d10",
+    muted: "#59636e",
+    faint: "#8a939d",
+    line: "#d1d9e0",
+    lineSoft: "#e8ecf0",
+    levels: ["#ebeef1", "#c4cbd2", "#8c96a0", "#4b545d", "#0b0d10"],
+    green: "#1a7f37",
   },
   dark: {
-    ink: "#f2f2f5",
-    muted: "#9a9aa4",
-    faint: "#3a3a42",
-    line: "#2a2a31",
-    surface: "#0d1117",
-    accent: "#8da2ff",
+    name: "dark",
+    bg: "#0d1117",
+    sunk: "#11161d",
+    fg: "#eef1f4",
+    muted: "#9198a1",
+    faint: "#656d76",
+    line: "#262c34",
+    lineSoft: "#1b2027",
+    levels: ["#151a21", "#2a313a", "#4d5661", "#8f98a3", "#eef1f4"],
+    green: "#3fb950",
   },
 };
 
-export const SANS = `ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif`;
-export const MONO = `ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace`;
+export const THEME_NAMES = Object.keys(THEMES);
 
 export const esc = (s) =>
-  String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-// Rough text width for the sans stack, good enough to wrap card copy.
-export const textWidth = (s, size) => [...String(s)].length * size * 0.5;
+export const fmt = (n) => Number(n).toLocaleString("en-US");
 
-export function wrap(text, size, maxWidth, maxLines) {
-  const words = String(text).split(/\s+/).filter(Boolean);
-  const lines = [];
-  let cur = "";
-  for (const w of words) {
-    const next = cur ? `${cur} ${w}` : w;
-    if (textWidth(next, size) <= maxWidth || !cur) cur = next;
-    else {
-      lines.push(cur);
-      cur = w;
-    }
-  }
-  if (cur) lines.push(cur);
-  if (lines.length > maxLines) {
-    const kept = lines.slice(0, maxLines);
-    kept[maxLines - 1] = kept[maxLines - 1].replace(/[\s.,;:]*$/, "") + "…";
-    return kept;
-  }
-  return lines;
+export const r1 = (n) => (Math.round(n * 10) / 10).toString();
+
+// Multiply an #rrggbb colour by a factor (used for isometric side faces).
+export function shade(hex, k) {
+  const n = parseInt(hex.slice(1), 16);
+  const c = [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((v) => Math.max(0, Math.min(255, Math.round(v * k))));
+  return "#" + c.map((v) => v.toString(16).padStart(2, "0")).join("");
 }
 
-export const fmt = (n) => (n >= 10000 ? `${(n / 1000).toFixed(1)}k` : n.toLocaleString("en-US"));
-
-// Language color is intentionally not GitHub's rainbow: first = accent, rest = greys.
-export function langShade(i, t) {
-  if (i === 0) return t.accent;
-  const greys = t === THEMES.light ? ["#52525b", "#8e8e98", "#bcbcc4", "#dcdce1"] : ["#c4c4cc", "#8e8e98", "#5e5e68", "#404048"];
-  return greys[Math.min(i - 1, greys.length - 1)];
+// Panel that every graphic sits in: sunk fill, 1px line, 8px radius.
+export function panel(t, w, h) {
+  return `<rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="8" fill="${t.sunk}" stroke="${t.line}"/>`;
 }
 
-export async function gh(path, { token = process.env.GITHUB_TOKEN, graphql } = {}) {
-  const url = graphql ? "https://api.github.com/graphql" : `https://api.github.com${path}`;
-  const res = await fetch(url, {
-    method: graphql ? "POST" : "GET",
-    headers: {
-      Accept: "application/vnd.github+json",
-      "User-Agent": "profile-readme-builder",
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-      ...(graphql ? { "Content-Type": "application/json" } : {}),
-    },
-    body: graphql ? JSON.stringify(graphql) : undefined,
-  });
-  if (!res.ok) {
-    const err = new Error(`${res.status} ${res.statusText} for ${graphql ? "graphql" : path}`);
-    err.status = res.status;
-    throw err;
-  }
-  const json = await res.json();
-  if (json.errors) throw new Error(`GraphQL: ${JSON.stringify(json.errors)}`);
-  return json;
-}
+export const SANS_STACK = `GeistSub, ui-sans-serif, system-ui, sans-serif`;
+export const MONO_STACK = `GeistMonoSub, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;

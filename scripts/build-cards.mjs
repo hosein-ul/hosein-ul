@@ -1,83 +1,109 @@
-// Generates assets/cards/<repo>-{light,dark}.svg for the repos in featured.json.
-// Live mode (GITHUB_TOKEN set): reads description, stars, languages, pushed date via the
-// REST API and skips anything that is missing, private, or archived-away.
-// Offline mode (--offline): uses the fallbacks in featured.json. No network.
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
-import { THEMES, SANS, MONO, esc, wrap, fmt, langShade, gh } from "./lib/theme.mjs";
+// Generates assets/card-<repo>-{light,dark}.svg for every entry in cards.json.
+// Repo metadata and real language data come from the REST API (repos/{owner}/{repo} and .../languages).
+//   node scripts/build-cards.mjs [--out DIR]
+import { readFileSync } from "node:fs";
+import { THEMES, THEME_NAMES, esc, panel, SANS_STACK, MONO_STACK } from "./lib/theme.mjs";
+import { asciiFontSet, measure, MONO_ADV } from "./lib/fonts.mjs";
+import { rest, writeAll, argv, run } from "./lib/github.mjs";
 
-const offline = process.argv.includes("--offline");
-const outDir = process.argv.find((a) => a.startsWith("--out="))?.slice(6) ?? "assets/cards";
-const cfg = JSON.parse(readFileSync(new URL("./featured.json", import.meta.url)));
+const W = 420;
+const H = 150;
+const PAD = 22;
+const DESC_SIZE = 12.5;
 
-const W = 600, H = 148;
+const config = JSON.parse(readFileSync(new URL("../cards.json", import.meta.url), "utf8"));
 
-async function load(r) {
-  if (offline) return { name: r.name, description: r.blurb, stars: null, pushed: null, langs: r.languages.map((l) => [l, 1]) };
-  let meta;
-  try {
-    meta = await gh(`/repos/${cfg.owner}/${r.name}`);
-  } catch (e) {
-    console.warn(`skip ${r.name}: ${e.message}`);
-    return null;
+// Greedy word wrap into at most two lines, using real glyph advances; ellipsis if it still overflows.
+function wrap(text, maxW) {
+  const lines = [""];
+  for (const word of text.split(/\s+/)) {
+    const cur = lines[lines.length - 1];
+    const next = cur ? `${cur} ${word}` : word;
+    if (measure("sans400", next, DESC_SIZE) <= maxW || !cur) lines[lines.length - 1] = next;
+    else lines.push(word);
   }
-  if (meta.private || meta.visibility !== "public") {
-    console.warn(`skip ${r.name}: not public`);
-    return null;
-  }
-  let langs = [];
-  try {
-    langs = Object.entries(await gh(`/repos/${cfg.owner}/${r.name}/languages`)).sort((a, b) => b[1] - a[1]);
-  } catch {}
-  if (!langs.length) langs = r.languages.map((l) => [l, 1]);
-  return { name: meta.name, description: meta.description || r.blurb, stars: meta.stargazers_count, pushed: meta.pushed_at, langs, url: meta.html_url };
+  if (lines.length <= 2) return lines;
+  let second = lines.slice(1).join(" ");
+  while (second && measure("sans400", second + "…", DESC_SIZE) > maxW) second = second.slice(0, -1).trimEnd();
+  console.warn(`::warning::description wrapped past two lines and was shortened: ${text}`);
+  return [lines[0], second + "…"];
 }
 
-function ago(iso) {
-  if (!iso) return "";
-  const d = (Date.now() - new Date(iso)) / 864e5;
-  if (d < 1) return "updated today";
-  if (d < 31) return `updated ${Math.floor(d)}d ago`;
-  if (d < 365) return `updated ${Math.floor(d / 30)}mo ago`;
-  return `updated ${Math.floor(d / 365)}y ago`;
+async function fetchCard(card) {
+  const [meta, langs] = await Promise.all([
+    rest(`repos/${config.owner}/${card.repo}`),
+    rest(`repos/${config.owner}/${card.repo}/languages`),
+  ]);
+  if (meta.private) throw new Error(`${card.repo} is private; refusing to publish a card for it`);
+  const ignore = new Set(config.ignoreLanguages);
+  const ranked = Object.entries(langs)
+    .filter(([name]) => !ignore.has(name))
+    .sort((a, b) => b[1] - a[1])
+    .map(([name]) => name);
+  return {
+    ...card,
+    description: card.description || meta.description || "",
+    languages: ranked.slice(0, 2),
+    url: meta.html_url,
+  };
 }
 
-function card(repo, themeName) {
-  const t = THEMES[themeName];
-  const lines = wrap(repo.description, 14, W - 96, 2);
-  const total = repo.langs.reduce((s, [, b]) => s + b, 0);
-  const top = repo.langs.slice(0, 3);
-  let x = 24;
-  const meta = top
-    .map(([name], i) => {
-      const s = `<circle cx="${x + 4}" cy="${H - 26}" r="4" fill="${langShade(i, t)}"/><text x="${x + 14}" y="${H - 22}" class="m">${esc(name)}</text>`;
-      x += 14 + name.length * 7 + 16;
-      return s;
-    })
-    .join("");
-  const right = [repo.stars != null ? `★ ${fmt(repo.stars)}` : "", ago(repo.pushed)].filter(Boolean).join("   ·   ");
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(repo.name)}: ${esc(repo.description)}">
-  <title>${esc(repo.name)}</title>
-  <style>
-    .n { font: 600 20px ${SANS}; letter-spacing: -.3px; fill: ${t.ink}; }
-    .d { font: 400 14px ${SANS}; fill: ${t.muted}; }
-    .m { font: 400 12px ${MONO}; fill: ${t.muted}; }
-  </style>
-  <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="10" fill="${t.surface}" stroke="${t.line}"/>
-  <rect x="24" y="28" width="3" height="20" rx="1.5" fill="${t.accent}"/>
-  <text class="n" x="36" y="45">${esc(repo.name)}</text>
-  <text class="m" x="${W - 24}" y="43" text-anchor="end">${esc(right)}</text>
-  ${lines.map((l, i) => `<text class="d" x="24" y="${76 + i * 20}">${esc(l)}</text>`).join("\n  ")}
-  ${meta}
+async function build(c, t) {
+  const fs = asciiFontSet("sans400", "mono400", "mono600");
+  const lines = wrap(c.description, W - PAD * 2);
+
+  const tagW = c.tag.length * 10 * MONO_ADV + 18;
+  const tag = `<rect x="${(W - PAD - tagW + 0.5).toFixed(1)}" y="19.5" width="${tagW.toFixed(1)}" height="20" rx="10" fill="${t.bg}" stroke="${t.line}"/>
+<text x="${(W - PAD - tagW / 2).toFixed(1)}" y="33" font-size="10" text-anchor="middle" fill="${t.muted}">${esc(c.tag)}</text>`;
+
+  const desc = lines
+    .map((l, i) => `<text class="d" x="${PAD}" y="${64 + i * 18}" font-size="${DESC_SIZE}" fill="${t.muted}">${esc(l)}</text>`)
+    .join("\n");
+
+  // Language swatches: filled = primary, half-filled = secondary, hollow ring = no compiled language.
+  const R = 4.5;
+  const cy = 126;
+  let lx = PAD;
+  let langs = "";
+  const items = c.languages.length ? c.languages : [c.languageFallback].filter(Boolean);
+  items.forEach((name, i) => {
+    const cx = lx + R;
+    if (!c.languages.length) langs += `<circle cx="${cx}" cy="${cy}" r="${R - 0.5}" fill="none" stroke="${t.faint}"/>`;
+    else if (i === 0) langs += `<circle cx="${cx}" cy="${cy}" r="${R}" fill="${t.fg}"/>`;
+    else
+      langs += `<circle cx="${cx}" cy="${cy}" r="${R - 0.5}" fill="none" stroke="${t.fg}"/><path d="M${cx} ${cy - R + 0.5}A${R - 0.5} ${R - 0.5} 0 0 0 ${cx} ${cy + R - 0.5}Z" fill="${t.fg}"/>`;
+    langs += `<text x="${lx + 2 * R + 7}" y="${cy + 4}" font-size="11" fill="${t.muted}">${esc(name)}</text>`;
+    lx += 2 * R + 7 + name.length * 11 * MONO_ADV + 18;
+  });
+
+  const label = (s) => esc(s);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t d">
+<title id="t">${esc(c.repo)}</title>
+<desc id="d">${esc(`${c.repo}: ${c.description} ${items.join(", ")}. ${c.context}.`)}</desc>
+<style>
+${await fs.css()}
+text{font-family:${MONO_STACK}}
+.d{font-family:${SANS_STACK}}
+</style>
+${panel(t, W, H)}
+<text x="${PAD}" y="35" font-size="14" font-weight="600" fill="${t.fg}">${label(c.repo)}</text>
+${tag}
+${desc}
+<line x1="${PAD}" y1="104.5" x2="${W - PAD}" y2="104.5" stroke="${t.lineSoft}"/>
+${langs}
+<text x="${W - PAD}" y="${cy + 4}" font-size="10.5" text-anchor="end" fill="${t.faint}">${label(c.context)}</text>
 </svg>
 `;
 }
 
-mkdirSync(outDir, { recursive: true });
-let n = 0;
-for (const r of cfg.repos) {
-  const repo = await load(r);
-  if (!repo) continue;
-  for (const th of ["light", "dark"]) writeFileSync(`${outDir}/${r.name.toLowerCase()}-${th}.svg`, card(repo, th));
-  n++;
-}
-console.log(`cards: ${n}/${cfg.repos.length} written${offline ? " (offline)" : ""}`);
+run(async () => {
+  const out = argv("--out") ?? "assets";
+  const cards = await Promise.all(config.cards.map(fetchCard));
+  const files = [];
+  for (const c of cards) {
+    for (const name of THEME_NAMES) files.push([`${out}/card-${c.repo}-${name}.svg`, await build(c, THEMES[name])]);
+    console.log(`${c.repo}: ${c.languages.join(", ") || `(no language data, using "${c.languageFallback}")`}`);
+  }
+  writeAll(files);
+  for (const [p, s] of files) console.log(p, Math.round(s.length / 1024) + " KB");
+});
