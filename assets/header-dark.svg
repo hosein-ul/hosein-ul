@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 220" width="860" height="220" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#0e1524"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </linearGradient>
+
+    <!-- Emerald Glow -->
+    <radialGradient id="emeraldGlow" cx="90%" cy="15%" r="65%">
+      <stop offset="0%" stop-color="#00F59B" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#00F59B" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#00F59B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle Cyan Accent Glow -->
+    <radialGradient id="cyanGlow" cx="10%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.6"/>
+      <circle cx="24" cy="24" r="0.75" fill="#334155" fill-opacity="0.8"/>
+    </pattern>
+
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      
+      @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        50% { transform: scale(1.4); opacity: 0.2; }
+        100% { transform: scale(0.95); opacity: 0.8; }
+      }
+      .ping {
+        animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        transform-origin: 40px 178px;
+      }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="858" height="218" rx="14" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="1" y="1" width="858" height="218" rx="14" fill="url(#grid)"/>
+  <rect x="1" y="1" width="858" height="218" rx="14" fill="url(#emeraldGlow)"/>
+  <rect x="1" y="1" width="858" height="218" rx="14" fill="url(#cyanGlow)"/>
+
+  <!-- Top Metadata Tag -->
+  <g transform="translate(36, 40)">
+    <rect x="0" y="-14" width="280" height="22" rx="4" fill="#161F30" stroke="#24334C" stroke-width="1"/>
+    <circle cx="10" cy="-3" r="3" fill="#00F59B"/>
+    <text x="20" y="1" class="mono" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="1.2">0xHOSEIN · ON-CHAIN SINCE 2021</text>
+  </g>
+
+  <!-- Name / Title -->
+  <text x="36" y="98" class="sans" font-size="38" font-weight="800" fill="#FFFFFF" letter-spacing="-0.8">Hosein <tspan font-size="22" font-weight="500" fill="#64748B">(@hosein-ul)</tspan></text>
+
+  <!-- Subtitle -->
+  <text x="36" y="128" class="sans" font-size="15" font-weight="400" fill="#94A3B8">Web3 Systems Architect <tspan fill="#00F59B">•</tspan> Stablecoin Settlement Rails <tspan fill="#00F59B">•</tspan> Confidential Computing</text>
+
+  <!-- Status Bar & Highlights -->
+  <g transform="translate(36, 178)">
+    <!-- Radar dot -->
+    <circle class="ping" cx="4" cy="-4" r="5" fill="#00F59B" fill-opacity="0.4"/>
+    <circle cx="4" cy="-4" r="3.5" fill="#00F59B"/>
+    <text x="18" y="0" class="mono" font-size="12" font-weight="600" fill="#E2E8F0" letter-spacing="0.5">ACTIVE · <tspan fill="#94A3B8">SHIPPING</tspan> <tspan fill="#00F59B">OPTIMA DEX</tspan> <tspan fill="#64748B">&amp;</tspan> <tspan fill="#38BDF8">PLINTH GATEWAY</tspan></text>
+  </g>
+
+  <!-- Right Side Interactive Badges / Pillars -->
+  <g transform="translate(560, 48)">
+    <!-- Pill 1: FHEVM -->
+    <g transform="translate(0, 0)">
+      <rect width="260" height="36" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <circle cx="18" cy="18" r="4" fill="#00F59B"/>
+      <text x="32" y="22" class="sans" font-size="12" font-weight="600" fill="#E5E7EB">Zama FHEVM &amp; ERC-7984</text>
+      <text x="210" y="22" class="mono" font-size="10" fill="#6B7280">Privacy</text>
+    </g>
+
+    <!-- Pill 2: Nitro L2 -->
+    <g transform="translate(0, 44)">
+      <rect width="260" height="36" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <circle cx="18" cy="18" r="4" fill="#38BDF8"/>
+      <text x="32" y="22" class="sans" font-size="12" font-weight="600" fill="#E5E7EB">Robinhood Chain (Nitro L2)</text>
+      <text x="218" y="22" class="mono" font-size="10" fill="#6B7280">DEX</text>
+    </g>
+
+    <!-- Pill 3: Circle Arc -->
+    <g transform="translate(0, 88)">
+      <rect width="260" height="36" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <circle cx="18" cy="18" r="4" fill="#A78BFA"/>
+      <text x="32" y="22" class="sans" font-size="12" font-weight="600" fill="#E5E7EB">Circle Arc &amp; Agent x402</text>
+      <text x="210" y="22" class="mono" font-size="10" fill="#6B7280">Rails</text>
+    </g>
+  </g>
+</svg>
