@@ -1,9 +1,23 @@
-# ⚡ Hosein
+<div align="center">
 
-> **Web3 Systems Architect & Smart Contract Engineer**  
-> On-chain since 2021 · Shipping [Optima DEX](https://github.com/hosein-ul/optima-pon) & [Plinth](https://github.com/hosein-ul/plinth) · Focused on FHEVM Privacy & Non-Custodial Rails
+# ⚡ Hosein
+### Web3 Systems Architect & Smart Contract Engineer
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2500&pause=1000&color=00F59B&center=true&vCenter=true&width=560&lines=Non-Custodial+Stablecoin+Rails;Confidential+State+on+Zama+FHEVM;High-Throughput+L2+DEX+Engineering;Autonomous+Agent+Transaction+Safety">
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2500&pause=1000&color=0969da&center=true&vCenter=true&width=560&lines=Non-Custodial+Stablecoin+Rails;Confidential+State+on+Zama+FHEVM;High-Throughput+L2+DEX+Engineering;Autonomous+Agent+Transaction+Safety">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2500&pause=1000&color=0969da&center=true&vCenter=true&width=560&lines=Non-Custodial+Stablecoin+Rails;Confidential+State+on+Zama+FHEVM;High-Throughput+L2+DEX+Engineering;Autonomous+Agent+Transaction+Safety" alt="Typing SVG" />
+</picture>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Shipping_Optima_DEX_%26_Plinth-10b981?style=flat-square&logo=statuspage&logoColor=white" />
+  <img src="https://img.shields.io/badge/Focus-FHEVM_%7C_Nitro_L2_%7C_Arc-0969da?style=flat-square&logo=ethereum&logoColor=white" />
+  <img src="https://img.shields.io/badge/On--Chain-Since_2021-8250df?style=flat-square&logo=blockchaindotcom&logoColor=white" />
+</p>
 
 ---
+
+</div>
 
 ### 🛰️ `$ whoami`
 
