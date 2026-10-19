@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="182" viewBox="0 0 860 182" role="img" aria-labelledby="t d">
+<title id="t">Stack</title>
+<desc id="d">Contracts: Solidity, Foundry, Hardhat, Zama FHEVM. App: TypeScript, Next.js, viem and wagmi, Fastify and Prisma. Security: threat modeling, fuzzing. Agents: MCP, x402, Circle and Arc.</desc>
+<style>
+@font-face{font-family:GeistMonoSub;font-weight:400;font-style:normal;src:url(data:font/woff2;base64,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) format("woff2")}
+text{font-family:GeistMonoSub, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}</style>
+<rect x=".5" y=".5" width="859" height="181" rx="8" fill="#f6f8fa" stroke="#d1d9e0"/>
+<line x1="215" y1="1" x2="215" y2="181" stroke="#d1d9e0"/>
+<line x1="430" y1="1" x2="430" y2="181" stroke="#d1d9e0"/>
+<line x1="645" y1="1" x2="645" y2="181" stroke="#d1d9e0"/>
+<text x="24" y="32" font-size="10.5" letter-spacing="1.8" fill="#8a939d">CONTRACTS</text>
+<g><rect x="24.5" y="50.5" width="97" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(34.5 56.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 3 8 9l4 13 4-13-2.5-6" /><path d="M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z" /><path d="M2 9h20" /></g>
+<text x="54.5" y="66" font-size="11.5" fill="#0b0d10">Solidity</text></g>
+<g><rect x="24.5" y="80.5" width="90" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(34.5 86.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" /><path d="m18 15 4-4" /><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" /></g>
+<text x="54.5" y="96" font-size="11.5" fill="#0b0d10">Foundry</text></g>
+<g><rect x="24.5" y="110.5" width="90" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(34.5 116.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5" /><path d="M14 6a6 6 0 0 1 6 6v3" /><path d="M4 15v-3a6 6 0 0 1 6-6" /><rect x="2" y="15" width="20" height="4" rx="1" /></g>
+<text x="54.5" y="126" font-size="11.5" fill="#0b0d10">Hardhat</text></g>
+<g><rect x="24.5" y="140.5" width="111" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(34.5 146.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="16" r="1" /><rect x="3" y="10" width="18" height="12" rx="2" /><path d="M7 10V7a5 5 0 0 1 10 0v3" /></g>
+<text x="54.5" y="156" font-size="11.5" fill="#0b0d10">Zama FHEVM</text></g>
+<text x="239" y="32" font-size="10.5" letter-spacing="1.8" fill="#8a939d">APP</text>
+<g><rect x="239.5" y="50.5" width="111" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(249.5 56.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1" /><path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1" /></g>
+<text x="269.5" y="66" font-size="11.5" fill="#0b0d10">TypeScript</text></g>
+<g><rect x="239.5" y="80.5" width="90" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(249.5 86.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M10 4v4" /><path d="M2 8h20" /><path d="M6 4v4" /></g>
+<text x="269.5" y="96" font-size="11.5" fill="#0b0d10">Next.js</text></g>
+<g><rect x="239.5" y="110.5" width="125" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(249.5 116.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5" /><path d="M15 8V2" /><path d="M17 8a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1z" /><path d="M9 8V2" /></g>
+<text x="269.5" y="126" font-size="11.5" fill="#0b0d10">viem · wagmi</text></g>
+<g><rect x="239.5" y="140.5" width="152" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(249.5 146.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5V19A9 3 0 0 0 21 19V5" /><path d="M3 12A9 3 0 0 0 21 12" /></g>
+<text x="269.5" y="156" font-size="11.5" fill="#0b0d10">Fastify · Prisma</text></g>
+<text x="454" y="32" font-size="10.5" letter-spacing="1.8" fill="#8a939d">SECURITY</text>
+<g><rect x="454.5" y="50.5" width="146" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(464.5 56.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="6" height="6" rx="1" /><rect x="2" y="16" width="6" height="6" rx="1" /><rect x="9" y="2" width="6" height="6" rx="1" /><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" /><path d="M12 12V8" /></g>
+<text x="484.5" y="66" font-size="11.5" fill="#0b0d10">Threat modeling</text></g>
+<g><rect x="454.5" y="80.5" width="90" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(464.5 86.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="12" height="12" x="2" y="10" rx="2" ry="2" /><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6" /><path d="M6 18h.01" /><path d="M10 14h.01" /><path d="M15 6h.01" /><path d="M18 9h.01" /></g>
+<text x="484.5" y="96" font-size="11.5" fill="#0b0d10">Fuzzing</text></g>
+<text x="669" y="32" font-size="10.5" letter-spacing="1.8" fill="#8a939d">AGENTS</text>
+<g><rect x="669.5" y="50.5" width="63" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(679.5 56.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2" /><rect x="14" y="2" width="8" height="8" rx="1" /></g>
+<text x="699.5" y="66" font-size="11.5" fill="#0b0d10">MCP</text></g>
+<g><rect x="669.5" y="80.5" width="70" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(679.5 86.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.744 17.736a6 6 0 1 1-7.48-7.48" /><path d="M15 6h1v4" /><path d="m6.134 14.768.866-.5 2 3.464" /><circle cx="16" cy="8" r="6" /></g>
+<text x="699.5" y="96" font-size="11.5" fill="#0b0d10">x402</text></g>
+<g><rect x="669.5" y="110.5" width="125" height="24" rx="5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(679.5 116.5) scale(.5)" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" /><path d="M12 18V6" /></g>
+<text x="699.5" y="126" font-size="11.5" fill="#0b0d10">Circle · Arc</text></g>
+</svg>
